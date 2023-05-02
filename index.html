@@ -10,6 +10,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -19,10 +20,13 @@
         <div class="weather-app">
           <div class="row">
             <div class="col-6">
-              <h1>Vancouver</h1>
+              <h1 id="city"></h1>
               <ul>
-                <li>Monday 14:00, Cloudy</li>
-                <li>Humidity: 75%, Wind: 10.29km/h</li>
+                <li>Monday 14:00, <span id="description"></span></li>
+                <li>
+                  Humidity: <span id="humidity"></span>%, Wind:
+                  <span id="wind"></span>km/h
+                </li>
               </ul>
             </div>
             <div class="col-6">
@@ -32,7 +36,7 @@
                   alt="Cloudy"
                 />
                 <div>
-                  <strong>14</strong
+                  <strong id="temperature"></strong
                   ><span class="units">°C | <a href="#">°F</a></span>
                 </div>
               </div>
