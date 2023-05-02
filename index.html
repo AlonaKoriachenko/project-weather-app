@@ -15,21 +15,28 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row">
-          <div class="col-6">
-            <h1>Vancouver</h1>
-            <ul>
-              <li>Monday 14:00, Cloudy</li>
-              <li>Humidity: 75%, Wind: 10.29km/h</li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-              alt="Cloudy"
-            />
-            14°C | °F
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="row">
+            <div class="col-6">
+              <h1>Vancouver</h1>
+              <ul>
+                <li>Monday 14:00, Cloudy</li>
+                <li>Humidity: 75%, Wind: 10.29km/h</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="Cloudy"
+                />
+                <div>
+                  <strong>14</strong
+                  ><span class="units">°C | <a href="#">°F</a></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <small>
