@@ -138,3 +138,10 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Vancouver");
+
+function goLinkedin() {
+  return window.open(
+    "https://www.linkedin.com/in/alona-koriachenko/",
+    "_blank"
+  );
+}
